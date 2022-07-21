@@ -13,11 +13,11 @@
     <div class="container">
         <div class="row content_wrapper">
             <div class="col">
-                <h1 class="text_center text_uppercase">
+                <h1 class="text_center text_uppercase"><!-- Title Section -->
                     Calcola il prezzo del tuo biglietto
                 </h1>
-                <form method="get">
-                    <div class="row">
+                <div class="form"><!-- Form Section -->
+                    <div class="row"><!-- Input -->
                         <div class="col">
                             <label for="full_name">
                                 Nome Completo
@@ -40,27 +40,62 @@
                                 <option value="0.4">Over 65</option>
                             </select>
                         </div>
-                    </div>
-                    <div class="row">
+                    </div><!-- Input -->
+                    <div class="row"><!-- Button -->
                         <div class="col">
                             <input type="submit" name="submit" id="submit" value="Genera">
                         </div>
-                    </div>
-                </form>
+                    </div><!-- Button -->
+                </div><!-- End Form Section -->
             </div>
         </div>
         <div class="row content_wrapper">
             <div class="col">
-                <h1 class="text_uppercase">
+                <h1 class="text_center text_uppercase"><!-- Title Section -->
                     Il tuo biglietto
                 </h1>
-                <ul class="list_group">
+                <ul class="list_group"><!-- List Ticket -->
                     <li class="list_item">
-                        <div class="ticket">
-                            <span class="ticket_item"></span>
+                        <div class="row ticket">
+                            <div class="col">
+                                <span class="info_ticket name_owner text_capitalize">
+                                    Nome passeggero
+                                </span>
+                                <span class="ticket_owner ticket_item"></span>
+                            </div>
+                            <div class="col">
+                                <span class="info_ticket">
+                                    Offerta
+                                </span>
+                                <span class="ticket_type ticket_item">
+                                    Biglietto Standard
+                                </span>
+                            </div>
+                            <div class="col">
+                                <span class="info_ticket">
+                                    Carrozza
+                                </span>
+                                <span class="ticket_item">
+                                    5
+                                </span>
+                            </div>
+                            <div class="col">
+                                <span class="info_ticket">
+                                    Codice CP
+                                </span>
+                                <span class="ticket_item">
+                                    92911
+                                </span>
+                            </div>
+                            <div class="col">
+                                <span class="info_ticket">
+                                    Costo Biglietto
+                                </span>
+                                <span class="ticket_price ticket_item"></span>
+                            </div>
                         </div>
                     </li>
-                </ul>
+                </ul><!-- List Ticket -->
             </div>
         </div>
     </div>

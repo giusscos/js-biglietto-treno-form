@@ -1,5 +1,6 @@
 const ticketTax = 0.21
-let fullName = '', distance = 0, ageSelect = 0, submit, ticketCost = 0, discount = 0, ticketOutPut;
+let fullName = '', distance = 0, ageSelect = 0, submit, ticketCost = 0,
+discount = 0, ticketNameOutPut, ticketPriceOutPut;
 
 // Acquisizione elementi DOM
 fullName = document.getElementById('full_name');
@@ -9,7 +10,8 @@ submit = document.getElementById('submit');
 
 // Al click lavorazione dei dati acquisiti e stampa
 submit.addEventListener('click', function() {
-    ticketOutPut = document.querySelector('.ticket_item');
+    ticketNameOutPut = document.querySelector('.ticket_owner');
+    ticketPriceOutPut = document.querySelector('.ticket_price');
 
     // Costo del biglietto senza sconto
     ticketCost = Math.abs(distance.value) * ticketTax;
@@ -22,5 +24,6 @@ submit.addEventListener('click', function() {
     }
     // Applicazione sconto al biglietto e taglio a due posizioni dopo la virgola
     ticketCost -= discount;
-    ticketOutPut.innerHTML = ticketCost.toFixed(2);
+    ticketNameOutPut.innerHTML = fullName.value;
+    ticketPriceOutPut.innerHTML = ticketCost.toFixed(2) + ' &euro;';
 });

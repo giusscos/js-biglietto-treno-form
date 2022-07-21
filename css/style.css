@@ -34,7 +34,10 @@ select{
 .text_uppercase{
     text-transform: uppercase;
 }
-.text_uppercase{
+.text_capitalize{
+    text-transform: capitalize;
+}
+.text_center{
     text-align: center;
 }
 /* 
@@ -60,8 +63,9 @@ body{
     background-color: var(--accent);
 }
 .content_wrapper{
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 10px #222;
 }
 .content_wrapper > .col{
     justify-content: center;
@@ -76,44 +80,65 @@ body{
 /* 
     Form
  */
-form .row{
+.form .row{
     padding: 2rem 0;
     align-items: center;
     justify-content: space-evenly;
 }
-form .row .col{
+.form .row .col{
     justify-content: center;
     padding: 0 20px;
 }
-form label,
-form input,
-form select{
+.form label,
+.form input,
+.form select{
     font-size: 1.3rem;
     font-weight: bold;
     padding: 0.5rem 0;
 }
-form input,
-form select,
-form #submit{
+.form input,
+.form select,
+.form #submit{
     color: var(--light);
     border-radius: 0.7rem;
     padding: 0.5rem 0.5rem;
     background-color: var(--dark);
     transition: 100ms ease-in-out;
 }
-form input:focus,
-form select:focus{
+.form input:focus,
+.form select:focus{
     outline: thick double var(--dark);
 }
-form label,
-form select,
-form #submit{   
+.form label,
+.form select,
+.form #submit{   
     cursor: pointer;
 }
-form #submit:hover{   
+.form #submit:hover{   
     color: var(--light);
     background-color: var(--accent);
 }
-form label{
+.form label{
     font-size: 1.5rem;
+}
+/* 
+    Ticket
+*/
+.ticket{
+    padding: 2rem 0;
+}
+.ticket > .col{
+    padding: 0 1rem;
+}
+.ticket .info_ticket{
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.ticket .ticket_item{
+    font-size: 1.25rem;
+}
+.ticket .ticket_owner,
+.ticket .ticket_price{
+    font-weight: bold;
 }
