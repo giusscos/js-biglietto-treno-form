@@ -4,24 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>
         Biglietto Treno Form
     </title>
 </head>
 <body>
     <div class="container">
-        <input type="text" name="full_name" id="full_name" placeholder="Scrivi il tuo nome">
-        <input type="number" name="km" id="km" placeholder="Inserisci i Km da percorrere">
-        <select name="age_select" id="age_select">
-            <option value="1">Maggiorenne</option>
-            <option value="0.2">Minorenne</option>
-            <option value="0.4">Over 65</option>
-        </select>
-        <input type="submit" name="submit" id="submit" value="Genera">
-    </div>
-    <div class="container">
-        <div class="ticket">
-            <span class="ticket_item"></span>
+        <div class="row content_wrapper">
+            <div class="col">
+                <h1 class="text_center text_uppercase">
+                    Calcola il prezzo del tuo biglietto
+                </h1>
+                <form method="get">
+                    <div class="row">
+                        <div class="col">
+                            <label for="full_name">
+                                Nome Completo
+                            </label>
+                            <input type="text" name="full_name" id="full_name" placeholder="Scrivi il tuo nome">
+                        </div>
+                        <div class="col">
+                            <label for="km">
+                                Distanza da percorrere
+                            </label>
+                            <input type="text" inputmode="numeric" name="km" id="km" placeholder="Inserisci i Km da percorrere">
+                        </div>
+                        <div class="col">
+                            <label>
+                                Fascia d&apos;Et&aacute;
+                            </label>
+                            <select name="age_select" id="age_select">
+                                <option value="1">Maggiorenne</option>
+                                <option value="0.2">Minorenne</option>
+                                <option value="0.4">Over 65</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="submit" name="submit" id="submit" value="Genera">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row content_wrapper">
+            <div class="col">
+                <h1 class="text_uppercase">
+                    Il tuo biglietto
+                </h1>
+                <ul class="list_group">
+                    <li class="list_item">
+                        <div class="ticket">
+                            <span class="ticket_item"></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     <script type="text/javascript" src="./js/app.js"></script>
