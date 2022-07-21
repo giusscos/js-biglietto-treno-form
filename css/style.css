@@ -44,10 +44,9 @@ select{
     Layout
 */
 .container{
-    height: 100%;
-    padding: 100px 0;
-    max-width: 1000px;
     margin: 0 auto;
+    max-width: 1000px;
+    padding: 3rem 1rem;
 }
 .row{
     display: flex;
@@ -56,11 +55,19 @@ select{
     display: flex;
     flex-direction: column;
 }
-
+.form > .row{
+    flex-wrap: wrap;
+}
+.form .row > .col{
+    flex-basis: 100%;
+}
+/* 
+    End Layout
+*/
 body{
-    height: 100vh;
     color: var(--light);
     background-color: var(--accent);
+    min-width: 500px;
 }
 .content_wrapper{
     align-items: center;
@@ -129,16 +136,32 @@ body{
 }
 .ticket > .col{
     padding: 0 1rem;
+    justify-content: space-between;
 }
 .ticket .info_ticket{
     font-weight: bold;
-    font-size: 1.5rem;
     padding-bottom: 1.5rem;
 }
 .ticket .ticket_item{
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 .ticket .ticket_owner,
 .ticket .ticket_price{
     font-weight: bold;
+}
+/*
+    Responsive
+*/
+@media screen and (min-width: 768px){
+    .ticket .info_ticket{
+        font-size: 1.5rem;
+    }   
+    .ticket .ticket_item{
+        font-size: 1.25rem;
+    }   
+}
+@media screen and (min-width: 1000px){
+    .form .row > .col{
+        flex-basis: auto;
+    }
 }
