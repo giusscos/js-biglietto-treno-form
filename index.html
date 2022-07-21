@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         Biglietto Treno Form
     </title>
 </head>
 <body>
+    <div class="container">
+        <input type="text" name="full_name" id="full_name" placeholder="Scrivi il tuo nome">
+        <input type="number" name="km" id="km" placeholder="Inserisci i Km da percorrere">
+        <select name="age_select" id="age_select">
+            <option value="1">Maggiorenne</option>
+            <option value="0.2">Minorenne</option>
+            <option value="0.4">Over 65</option>
+        </select>
+        <input type="submit" name="submit" id="submit" value="Genera">
+    </div>
     <script type="text/javascript" src="./js/app.js"></script>
 </body>
 </html>
