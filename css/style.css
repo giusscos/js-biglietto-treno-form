@@ -105,7 +105,7 @@ body{
 }
 .form input,
 .form select,
-.form #submit{
+.form input[type="submit"]{
     color: var(--light);
     border-radius: 0.7rem;
     padding: 0.5rem 0.5rem;
@@ -118,10 +118,10 @@ body{
 }
 .form label,
 .form select,
-.form #submit{   
+.form input[type="submit"]{   
     cursor: pointer;
 }
-.form #submit:hover{   
+.form input[type="submit"]:hover{   
     color: var(--light);
     background-color: var(--accent);
 }

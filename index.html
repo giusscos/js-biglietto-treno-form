@@ -35,15 +35,18 @@
                                 Fascia d&apos;Et&aacute;
                             </label>
                             <select name="age_select" id="age_select">
-                                <option value="1">Maggiorenne</option>
-                                <option value="0.2">Minorenne</option>
-                                <option value="0.4">Over 65</option>
+                                <option value="1">Minorenne</option>
+                                <option value="2" selected>Maggiorenne</option>
+                                <option value="3">Over 65</option>
                             </select>
                         </div>
                     </div><!-- Input -->
                     <div class="row"><!-- Button -->
                         <div class="col">
                             <input type="submit" name="submit" id="submit" value="Genera">
+                        </div>
+                        <div class="col">
+                            <input type="submit" name="undo" id="undo" value="Annulla">
                         </div>
                     </div><!-- Button -->
                 </div><!-- End Form Section -->
@@ -55,47 +58,7 @@
                     Il tuo biglietto
                 </h1>
                 <ul class="list_group"><!-- List Ticket -->
-                    <li class="list_item">
-                        <div class="row ticket">
-                            <div class="col">
-                                <span class="info_ticket name_owner text_capitalize">
-                                    Nome passeggero
-                                </span>
-                                <span class="ticket_owner ticket_item"></span><!-- Name Owner Ticket -->
-                            </div>
-                            <div class="col">
-                                <span class="info_ticket">
-                                    Offerta
-                                </span>
-                                <span class="ticket_type ticket_item">
-                                    Biglietto Standard
-                                </span>
-                            </div>
-                            <div class="col">
-                                <span class="info_ticket">
-                                    Carrozza
-                                </span>
-                                <span class="ticket_item">
-                                    5
-                                </span>
-                            </div>
-                            <div class="col">
-                                <span class="info_ticket">
-                                    Codice CP
-                                </span>
-                                <span class="ticket_item">
-                                    92911
-                                </span>
-                            </div>
-                            <div class="col">
-                                <span class="info_ticket">
-                                    Costo Biglietto
-                                </span>
-                                <span class="ticket_price ticket_item"></span><!-- Ticket Price-->
-                            </div>
-                        </div>
-                    </li>
-                </ul><!-- List Ticket -->
+                </ul><!-- End List Ticket -->
             </div>
         </div>
     </div>
