@@ -121,6 +121,9 @@ body{
 .form input[type="submit"]{   
     cursor: pointer;
 }
+.form input[type="submit"]{
+    margin-bottom: 10px;   
+}
 .form input[type="submit"]:hover{   
     color: var(--light);
     background-color: var(--accent);
